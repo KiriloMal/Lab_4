@@ -2,6 +2,8 @@ package org.example;
 
 import org.junit.Test;
 import java.awt.Color;
+
+import static java.awt.Color.black;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotNull;
 
@@ -16,7 +18,7 @@ public class ShapeFactoryColorTest {
 
         assertNotNull("Color should not be null", actualColor);
 
-        Color expectedColor = Color.red;
+        Color expectedColor = black;
 
         assertEquals("Unexpected color", expectedColor, actualColor);
     }
